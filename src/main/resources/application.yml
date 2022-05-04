@@ -10,4 +10,10 @@ kafka:
     'group.id': jcfwzt_zhiming_test_group
     'auto.offset.reset': earliest
     'max.poll.records': 500
+    'thread.min': 3
+    'thread.max': 10
+msg:
+  consumer:
+    topic: mqp-hzm-test
+
 
