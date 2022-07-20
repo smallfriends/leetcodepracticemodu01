@@ -1,0 +1,27 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MultiThreadConsumer">
+    <output-path>$PROJECT_DIR$/out/artifacts/MultiThreadConsumer</output-path>
+    <root id="archive" name="MultiThreadConsumer.jar">
+      <element id="module-output" name="leetcodepracticemodu01" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/xerial/snappy/snappy-java/1.1.7.3/snappy-java-1.1.7.3.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-aop/5.2.9.RELEASE/spring-aop-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-tx/5.2.8.RELEASE/spring-tx-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-expression/5.2.9.RELEASE/spring-expression-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/com/github/luben/zstd-jni/1.4.4-7/zstd-jni-1.4.4-7.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/lz4/lz4-java/1.7.1/lz4-java-1.7.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/projectlombok/lombok/1.18.24/lombok-1.18.24.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/aspectj/aspectjweaver/1.9.2/aspectjweaver-1.9.2.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-context/5.2.9.RELEASE/spring-context-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/kafka/spring-kafka/2.5.4.RELEASE/spring-kafka-2.5.4.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-jcl/5.2.9.RELEASE/spring-jcl-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-core/5.2.9.RELEASE/spring-core-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/com/vaadin/external/google/android-json/0.0.20131108.vaadin1/android-json-0.0.20131108.vaadin1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-messaging/5.2.8.RELEASE/spring-messaging-5.2.8.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/retry/spring-retry/1.2.5.RELEASE/spring-retry-1.2.5.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/springframework/spring-beans/5.2.9.RELEASE/spring-beans-5.2.9.RELEASE.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/aspectj/aspectjrt/1.9.1/aspectjrt-1.9.1.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/apache/kafka/kafka-clients/2.5.0/kafka-clients-2.5.0.jar" path-in-jar="/" />
+      <element id="extracted-dir" path="D:/Software/maven/LocalWarehouse/org/slf4j/slf4j-api/1.7.30/slf4j-api-1.7.30.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>

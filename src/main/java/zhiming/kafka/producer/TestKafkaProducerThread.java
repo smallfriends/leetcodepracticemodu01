@@ -14,7 +14,7 @@ import java.util.concurrent.LinkedBlockingDeque;
 public class TestKafkaProducerThread {
 
     //实例连接池大小
-    public static final int producerNum = 200;
+    public static final int producerNum = 20;
     //阻塞队列实现生产者实例池,获取连接作出队操作,归还连接作入队操作
     public static BlockingDeque<KafkaProducer<String, String>> queue = new LinkedBlockingDeque<>(producerNum);
 
@@ -22,15 +22,18 @@ public class TestKafkaProducerThread {
     static {
         //kafka生产者配置文件
         Map<String, Object> config = new HashMap<>();
-        config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.90.73.93:9092,10.90.73.49:9092,10.90.73.212:9092");
+        //测试环境
+        config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.90.73.176:9092,10.90.73.177:9092,10.90.73.185:9092");
+        //线上环境
+        //config.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, "10.61.67.193:9092,10.61.67.194:9092,10.61.67.195:9092");
         config.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, org.apache.kafka.common.serialization.StringSerializer.class);
         config.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, org.apache.kafka.common.serialization.StringSerializer.class);
         config.put(ProducerConfig.ACKS_CONFIG, "1");
-        config.put("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required\n" +
-                "username=\"jcfwzt_zhiming_test\" \n" +
-                "password=\"I29tTBEsLZn51uWA\";");
-        config.put("sasl.mechanism", "PLAIN");
-        config.put("security.protocol", "SASL_PLAINTEXT");
+        //config.put("sasl.jaas.config", "org.apache.kafka.common.security.plain.PlainLoginModule required\n" +
+        //        "username=\"jcfwzt_zhiming_test\" \n" +
+        //        "password=\"I29tTBEsLZn51uWA\";");
+        //config.put("sasl.mechanism", "PLAIN");
+        //config.put("security.protocol", "SASL_PLAINTEXT");
 
         for (int i = 0; i < producerNum; i++) {
             KafkaProducer<String, String> kafkaProducer = new KafkaProducer<String, String>(config);
@@ -80,7 +83,7 @@ public class TestKafkaProducerThread {
         //Future future = kafkaProducer.send(record);
         //System.out.println(future.get());
 
-        for (int i = 0; i < 500; i++) {
+        for (int i = 0; i < 50; i++) {
             SendTread sendTread = new SendTread("test multi-thread producer!");
             sendTread.start();
         }
